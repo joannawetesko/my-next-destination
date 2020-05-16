@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/current_country_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:contentDescription="@string/image">
+            </ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:background="@color/colorButtonBackground"
+                android:textColor="@color/colorButtonText"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="bold"
+                android:id="@+id/mail_button"
+                android:text="@string/sendMail" />
+
+            <Button
+                android:layout_width="205dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/colorButtonBackground"
+                android:textColor="@color/colorButtonText"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="bold"
+                android:id="@+id/search_button"
+                android:text="@string/searchTrips"/>
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/colorButtonBackground"
+                android:textColor="@color/colorButtonText"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="bold"
+                android:id="@+id/search_button_google"
+                android:text="@string/searchGoogle"/>
+
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/current_country_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="bold"
+                android:textSize="100sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/list_properties_image_1"
+                android:contentDescription="@string/image" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:id="@+id/list_properties_text_1" />
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/list_properties_image_2"
+                android:contentDescription="@string/image" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:id="@+id/list_properties_text_2" />
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="45dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/list_properties_image_3"
+                android:contentDescription="@string/image" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:id="@+id/list_properties_text_3" />
+
+            </LinearLayout>
+
+        <com.example.jwetesko.travelapplication.Views.ExpandableHeightGridView
+                android:id="@+id/current_country_photos_grid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:isScrollContainer="false"
+                android:numColumns="2"
+                android:stretchMode="columnWidth">
+        </com.example.jwetesko.travelapplication.Views.ExpandableHeightGridView>
+
+    </LinearLayout>
+</ScrollView>
